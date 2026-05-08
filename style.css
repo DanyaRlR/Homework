@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
-     <style>
-     body {
+body {
             margin: 0;
             font-family: Arial, sans-serif;
             background: white;
@@ -93,24 +86,3 @@
             border: 1px solid #ddd;
             margin-top: 10px;
         } 
-     </style>  
-</head>
-<body>
-   <div class="modal">
-    <div class="top-text">
-        Login | <span>Register</span>
-    </div>
-    <p>Enter your email and password to register.</p>
-   <form action="">
-        <input type="text" id="username" placeholder="Username" required>
-        <input type="text" id="email" placeholder="Enter your email address" required>
-        <input type="password" id="password" placeholder="Password" required>
-        <input type="password" id="confirm-password" placeholder="Confirm Password" required>
-        <button class="register-btn" type="submit">Register</button>
-   </form>
-   <p class="p-regist">Or register with</p>
-   <button class="social-btn"> <img src="./images/google 1.svg" alt="">Continue with Google</button>
-   <button class="social-btn"> <img src="./images/facebook 1.png" alt="">Continue with Facebook</button>
-   </div>
-</body>
-</html>
