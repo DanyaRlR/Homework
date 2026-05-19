@@ -1,0 +1,182 @@
+@font-face {
+    font-family: "CeraPro Regular";
+    src: url('../fonts/CeraPro-Regular.eot'); src: url('../fonts/CeraPro-Regular.ttf'); }
+@font-face {
+    font-family: "CeraPro Bold";
+    src: url('../fonts/CeraPro-Bold.eot'); src: url('../fonts/CeraPro-Bold.ttf'); 
+}
+@font-face {
+    font-family: "CeraPro Light";
+    src: url('../fonts/CeraPro-Light.eot'); src: url('../fonts/CeraPro-Light.ttf'); 
+}    
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: #FFF;
+}
+.container{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 171px 105px 82px 135px;
+
+}
+.sidebar{
+    flex: 1;
+    background: #FBFBFB;
+}
+.categories{
+    background: #FBFBFB;
+}
+.categories h2{
+                color: #3D3D3D;
+    font-family: "CeraPro Bold";
+    font-size: 18px;
+    font-style: normal;
+    line-height: 16px; /* 88.889% */
+    margin-top: 14px;
+    padding-left: 18px;
+}
+.categories li{
+    color: #3D3D3D;
+    font-family: "CeraPro Light";
+    font-size: 15px;
+    font-style: normal;
+    line-height: 40px;
+    margin-top: 7px;
+    padding-left: 30px;
+}
+.categories .active{
+    color: #46A358;
+    font-family: "CeraPro Bold";
+    font-size: 15px;
+    font-style: normal;
+    line-height: 40px; /* 266.667% */
+}
+.banner{
+ margin-top: 377px;
+    background: #FBFBFB;
+    text-align: center;
+    padding: 0px;
+}
+.product-section{
+    flex: 3;
+    padding-left: 50px;
+    
+}
+.product-header{
+   display: flex;
+   justify-content:space-between;
+   margin-bottom: 31px; 
+}
+.tabs{
+        color: #3D3D3D;
+    font-family: "CeraPro Light";
+    font-size: 15px;
+    font-style: normal;
+    line-height: 16px; /* 106.667% */        
+}
+.tabs ul{
+    display: flex;
+    gap: 40px;
+}
+.tabs .active{
+        color: #46A358;
+    font-family: "CeraPro Bold";
+    font-size: 15px;
+    font-style: normal;
+    line-height: 16px; /* 106.667% */
+    border-bottom: 2px solid transparent;
+    border-color: #46A358;
+}
+
+.sort{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: #3D3D3D;
+    font-family: "CeraPro Regular";
+    font-size: 15px;
+    font-style: normal;
+    line-height: 16px; /* 106.667% */
+}
+.products-card{
+    background: #FFF;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px 33px;
+}
+
+.card {
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.rectangle{
+    background: #FBFBFB;
+    padding: 25px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+    
+}
+.card img {
+    display: block;
+    margin: auto;
+    background: #FBFBFB;
+}
+
+
+.card h4{
+        color: #3D3D3D;
+    font-family: "CeraPro Regural";
+    font-size: 16px;
+    font-style: normal;
+    line-height: 16px; /* 100% */
+}
+.card span{
+        color: #46A358;
+    font-family: "CeraPro Bold";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 88.889% */
+    margin-top: 6px;
+}
+.pagination {
+    
+    margin-top: 90px;
+    grid-column: 2;         /* КРИТИЧНО: змушує пагінацію стояти чітко у другій колонці (під товарами) */
+    display: flex;          
+    justify-content: flex-end; /* Вирівнювання по правому краю (якщо треба по центру, зміни на center) */
+    gap: 8px
+}
+
+.pagination span {
+    display: inline-block;
+    padding: 9px 13px 10px;
+    gap: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #E5E5E5;
+    color: #3D3D3D;
+    font-family: "CeraPro Light";
+    font-size: 18px;
+    font-style: normal;
+    line-height: 16px; /* 88.889% */
+}
+
+.pagination .active {
+    background: #46A358;
+    color: #FFF;
+    font-family: "CeraPro Bold";
+    font-size: 18px;
+    font-style: normal;
+    line-height: 16px; /* 88.889% */
+}
