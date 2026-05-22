@@ -1,6 +1,7 @@
 @font-face {
     font-family: "CeraPro Regular";
-    src: url('../fonts/CeraPro-Regular.eot'); src: url('../fonts/CeraPro-Regular.ttf'); }
+    src: url('../fonts/CeraPro-Regular.eot'); src: url('../fonts/CeraPro-Regular.ttf');
+ }
 @font-face {
     font-family: "CeraPro Bold";
     src: url('../fonts/CeraPro-Bold.eot'); src: url('../fonts/CeraPro-Bold.ttf'); 
@@ -18,15 +19,13 @@ body{
     background: #FFF;
 }
 .container{
-    margin: auto;
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
     padding: 171px 105px 82px 135px;
+    gap: 50px;
 
 }
 .sidebar{
-    flex: 1;
+    /* flex: 1; */
     background: #FBFBFB;
 }
 .categories{
@@ -38,36 +37,39 @@ body{
     font-size: 18px;
     font-style: normal;
     line-height: 16px; /* 88.889% */
-    margin-top: 14px;
-    padding-left: 18px;
+    padding: 18px;
+}
+.categories ul{
+    padding: 0px 12px;
 }
 .categories li{
     color: #3D3D3D;
     font-family: "CeraPro Light";
     font-size: 15px;
     font-style: normal;
-    line-height: 40px;
+    line-height: 30px;
     margin-top: 7px;
-    padding-left: 30px;
+    color: #3D3D3D;
+    font-weight: 400;
+    
 }
 .categories .active{
     color: #46A358;
     font-family: "CeraPro Bold";
     font-size: 15px;
     font-style: normal;
-    line-height: 40px; /* 266.667% */
+    line-height: 20px; /* 266.667% */
 }
-.banner{
+.sidebar img{
  margin-top: 377px;
     background: #FBFBFB;
     text-align: center;
     padding: 0px;
+    width: 310px;
 }
-.product-section{
-    flex: 3;
-    padding-left: 50px;
+
     
-}
+
 .product-header{
    display: flex;
    justify-content:space-between;
@@ -92,6 +94,8 @@ body{
     line-height: 16px; /* 106.667% */
     border-bottom: 2px solid transparent;
     border-color: #46A358;
+    padding-bottom: 7px;
+    
 }
 
 .sort{
@@ -106,9 +110,10 @@ body{
 }
 .products-card{
     background: #FFF;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 70px 33px;
+    justify-content: center;
 }
 
 .card {
@@ -123,22 +128,24 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 12px;
     
 }
 .card img {
-    display: block;
-    margin: auto;
     background: #FBFBFB;
+    max-height: 250px;
 }
 
 
 .card h4{
         color: #3D3D3D;
-    font-family: "CeraPro Regural";
+    font-family: "CeraPro Regular";
     font-size: 16px;
     font-style: normal;
     line-height: 16px; /* 100% */
+    margin-top: 12px;
+    color: #3D3D3D;
+    font-weight: 400;
+
 }
 .card span{
         color: #46A358;
@@ -152,14 +159,13 @@ body{
 .pagination {
     
     margin-top: 90px;
-    grid-column: 2;         /* КРИТИЧНО: змушує пагінацію стояти чітко у другій колонці (під товарами) */
+    /* grid-column: 2;         КРИТИЧНО: змушує пагінацію стояти чітко у другій колонці (під товарами) */
     display: flex;          
     justify-content: flex-end; /* Вирівнювання по правому краю (якщо треба по центру, зміни на center) */
     gap: 8px
 }
 
-.pagination span {
-    display: inline-block;
+.pagination button {
     padding: 9px 13px 10px;
     gap: 10px;
     cursor: pointer;
@@ -170,9 +176,14 @@ body{
     font-size: 18px;
     font-style: normal;
     line-height: 16px; /* 88.889% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 35px;
+    max-height: 35px;
+    background-color: transparent;
 }
-
-.pagination .active {
+.pagination button.active {
     background: #46A358;
     color: #FFF;
     font-family: "CeraPro Bold";
