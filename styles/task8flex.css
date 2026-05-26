@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "CeraPro Black" ;
+    src: url('../fonts/CeraPro-Black.eot'); src: url('../fonts/CeraPro-Black.ttf');
+}
+@font-face {
+    font-family: "CeraPro Regular" ;
+    src: url('../fonts/CeraPro-Regular.eot'); src: url('../fonts/CeraPro-Regular.ttf');
+}
+@font-face {
+    font-family: "CeraPro Medium" ;
+    src: url('../fonts/CeraPro-Medium.eot'); src: url('../fonts/CeraPro-Medium.ttf');
+}
+@font-face {
+    font-family: "CeraPro Bold" ;
+    src: url('../fonts/CeraPro-Bold.eot'); src: url('../fonts/CeraPro-Bold.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.plant-container{
+  padding: 69px 119px 68px;  
+}
+.plant-top{
+    display: flex;
+    gap: 28px;
+    margin-top: 52px;
+}
+.plant-card1{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #FBFBFB;
+    padding: 37px 30px 46px 264px;
+}
+.plant-card2{
+    display: flex;
+    align-items: center;
+    position: relative;
+    align-items: center;
+    background-color: #FBFBFB;
+    padding: 37px 35px 46px 259px;
+}
+.plant-card1 img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.plant-card2 img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.plant-text1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.plant-text1 h3{
+    color: #3D3D3D;
+text-align: right;
+font-family: "CeraPro Black";
+font-size: 18px;
+font-style: normal;
+line-height: 24px; /* 133.333% */
+text-transform: uppercase;
+text-align: right;
+margin-bottom: 9px;
+max-width: 150px;
+}
+.plant-text1 p{
+    color: #727272;
+text-align: right;
+font-family: "CeraPro Regular";
+font-size: 14px;
+font-style: normal;
+line-height: 24px; /* 171.429% */
+margin-bottom: 25px;
+}
+.btn{
+    padding: 11px 27px 9px 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+background-color: #46A358;
+color: #FFF;
+font-family: "CeraPro Medium";
+font-size: 14px;
+font-style: normal;
+line-height: 20px; /* 142.857% */
+}
+.plant-container h2{
+    margin-top: 138px;
+    color: #3D3D3D;
+text-align: center;
+font-family: "CeraPro Bold";
+font-size: 30px;
+font-style: normal;
+line-height: 16px; /* 53.333% */
+}
+.plant-container h6{
+    margin-top: 15px;
+    color: #727272;
+text-align: center;
+font-family: "CeraPro Regular";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+}
+.blog-posts{
+    display: flex;
+    gap: 44px;
+    margin-top: 35px;
+}
+
+.blog-post{
+    background-color: #FBFBFB;
+}
+.blog-post-content{
+    padding:  9px 15px 12px;
+}
+
+.blog-post-content span{
+    color: #46A358;
+font-family: "CeraPro Medium";
+font-size: 14px;
+font-style: normal;
+line-height: 16px; /* 114.286% */
+}
+
+.blog-post-content h3{
+    color: #3D3D3D;
+font-family: "CeraPro Bold";
+font-size: 20px;
+font-style: normal;
+line-height: 26px; /* 130% */
+margin-top: 4px;
+max-width: 202px;
+}
+
+.blog-post-content p{
+    color: #727272;
+font-family: "CeraPro Regular";
+font-size: 14px;
+font-style: normal;
+line-height: 22px; /* 157.143% */
+margin-top: 4px;
+}
+
+.blog-post-content a{
+    color: #3D3D3D;
+font-family: "CeraPro Medium";
+font-size: 14px;
+font-style: normal;
+line-height: 16px; /* 114.286% */
+    text-decoration: none;
+    margin-top: 9px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.blog-post-content a svg{
+    position: relative;
+    top: 1px;
+}
+.blog-post-content a.active{
+    color: #46A358;
+font-family: "CeraPro Medium";
+font-size: 14px;
+font-style: normal;
+line-height: 16px; /* 114.286% */
+}
