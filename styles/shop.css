@@ -133,6 +133,7 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
     
 }
 .rectangle::after {
@@ -157,15 +158,15 @@ body{
     position: absolute;
     display: flex;
     gap: 26px;
-    visibility: hidden;
-    transition: 0.3s;
+    /* visibility: hidden; */ 
     padding: 258px 66px 7px;
-
+    opacity: 0;
+    transition: 0.3s;
 }
 
 
 
-.icons div {
+.icon-btn {
     min-width: 35px;
     min-height: 35px;
     background-color: #FFF;
@@ -173,12 +174,24 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #3D3D3D;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+}
+.icon-btn svg {
+    fill: currentColor;
+}
+.icon-btn:hover {
+    color: #46A358;
 }
 
 
 
-.card:hover .icons {
-    visibility: visible;
+ .card:hover .icons {
+    /* visibility: visible; */
+    opacity: 1;
+    pointer-events: auto;
 }
 
 
