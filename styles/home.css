@@ -36,33 +36,121 @@
 .menuItem{
     padding: 8px 0px 25px;
     color: #3D3D3D;
-font-family: "CeraPro Regular", sans-serif;
-border-bottom: 3px solid transparent;
-position: relative;
-
-
+    font-family: "CeraPro Regular", sans-serif;
+    border-bottom: 3px solid transparent;
+    position: relative;
 }
-.active{
+.menuItem.active{
     font-family: "CeraPro Bold", sans-serif;
     border-color: #46A358;
 }
+.encode-sans-expanded-regular {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.sublistItem,.flyout a{
+    font-family: "CeraPro Regular", sans-serif;
+    text-transform: none;
+    font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 400;
+}
 .sublistItem > a{
     padding: 8px 14px;
-    background-color: #46A358;
+    background-color: #EDF6EE;
     text-transform: uppercase;
-    color: #FFF;
+    color: #3D3D3D;
     display: inline-block;
+    min-width: 188px;
+    max-height: 35px;
+    text-decoration: none;
+    text-transform: none;
+}
+.sublistItem a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 88px;
 }
 .sublist {
     position: absolute;
-    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
     top: 100%;
-    padding-top: 15px;
+    padding-top: 12px;
     z-index: 2;
     padding-left: 0;
-    min-width: 188px;
-    align-items: center;
+    display: none;
+    
 }
+li, a{
+    cursor: pointer;
+}
+.menuItem:hover > .sublist{
+    display: block;
+}
+
+.priming-link{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:88px;
+    min-width:188px;
+    padding:8px 14px;
+    background-color: #EDF6EE;
+    color:#3D3D3D;
+}
+
+
+
+.has-flyout:hover > .priming-link{
+    background: #1A712A;
+    color:#FFFFFF;
+    /* font-family:"CeraPro Bold"; */
+    font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.has-flyout{
+    position:relative;
+}
+
+.flyout{
+    position:absolute;
+    left:100%;
+    top:0;
+    transform: translateY(-50%);
+    display:none;
+    padding-left:2px;
+    list-style:none;
+}
+
+.has-flyout:hover > .flyout{
+    display:block;
+}
+
+.flyout a{
+    display:block;
+    min-width:160px;
+    padding:8px 14px;
+    background-color: #EDF6EE;
+    color:#3D3D3D;
+    text-decoration: none;
+}
+
+.icon-active{
+    display:none;
+}
+.has-flyout:hover .icon-default{
+    display:none;
+}
+
+.has-flyout:hover .icon-active{
+    display:inline-block;
+}
+
+
+
 .headerbtn{
     background: #46A358;
     color: #fff;
