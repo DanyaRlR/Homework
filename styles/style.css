@@ -6,6 +6,7 @@ body {
             justify-content: center;
             align-items: center;
             height: 100vh;
+            flex-direction: column;
         }
 
         .modal {
@@ -86,3 +87,51 @@ body {
             border: 1px solid #ddd;
             margin-top: 10px;
         } 
+        
+@keyframes loader-spin {
+  0% { transform: rotate(0) }
+  100% { transform: rotate(360deg) }
+}
+
+.loader {
+    width: 312px;
+    height: 312px;
+    display: inline-block;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.loader-spinner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0;
+}
+
+.loader-spinner div {
+    box-sizing: border-box;
+}
+
+.loader-spinner > div {
+    position: absolute;
+    width: 212px;
+    height: 212px;
+    top: 50px;
+    left: 50px;
+    border-radius: 50%;
+    border: 12px solid #000;
+    border-color: #cff487 transparent #557c09 transparent;
+    animation: loader-spin 1.8s linear infinite;
+}
+
+.loader-spinner > div:nth-child(2),
+.loader-spinner > div:nth-child(4) {
+    width: 181px;
+    height: 181px;
+    top: 66px;
+    left: 66px;
+    animation: loader-spin 1.8s linear infinite reverse;
+}
+
